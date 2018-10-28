@@ -1,0 +1,146 @@
+$secondary-text-color: #C9C9C9;
+
+header {
+  background-color: #2A4B77;
+  border: none;
+  height: 120px;
+  font-size: 1.125rem;
+  a {
+    color: white;
+  }
+}
+
+header:after {
+  display: flex;
+  content: "";
+  height: 50px;
+  background: linear-gradient(white, transparent);
+  margin-top:23px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 70px 0 70px;
+}
+
+.header-fade {
+  height: 30px;
+  background: linear-gradient(white, transparent);
+}
+
+.wt-menu-brand {
+
+  display: inline-flex;
+  align-self: baseline;
+
+  a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: flex-end;
+  }
+
+  span {
+    font-size: 1.25rem;
+    align-self: flex-end;
+    color: $secondary-text-color;
+    font-weight: bold;
+
+    img {
+      margin-right: 10px;
+      margin-bottom :5px;
+    }
+  }
+
+  span:nth-of-type(2) {
+    font-size: 2.5rem;
+    margin-right:5px;
+    font-weight: normal;
+  }
+}
+
+.wt-menu-button-links {
+
+  display: inline-flex;
+  align-self: baseline;
+  align-items: center;
+  color: white;
+
+  button {
+    padding: 1em 2em;
+    background-color: transparent;
+    border: 1px white solid;
+    margin: auto .5em;
+  }
+
+  mat-icon {
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 1px;
+  }
+
+}
+
+.wt-menu-login {
+
+  display: inline-flex;
+  align-self: baseline;
+
+  mat-icon {
+    vertical-align: middle;
+    margin: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+
+.navbar {
+  
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-text span {
+  font-size: 1.75em;
+  vertical-align: bottom;
+}
+
+.navbar-text .wt-menu-title {
+  font-size: 1em;
+  vertical-align: bottom;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background: transparent;
+}
+
+.header-container {
+  padding: 30px 40px 20px 40px;  
+}
+
+.wt-menu .btn-default, 
+.wt-menu .dropdown-toggle {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.wt-menu .dropdown-menu>li>a {
+  color: black;
+}

@@ -1,0 +1,105 @@
+p {
+  font-family: Lato;
+}
+
+$secondary-text-color: #C9C9C9;
+$font-family-grundfos-header: "GrundfosTheSansV2OT-7B";
+$font-family-grundfos-brand: "GrundfosTheSansV2OT-8XB";
+
+header {
+  background-color: #2A4B77;
+  border: none;
+  height: 120px;
+  font-family: $font-family-grundfos-header, Tahoma, sans-serif;
+  font-size: 0.75em;
+  a {
+    color: white;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 70px 0 70px;
+}
+
+.wt-menu-brand {
+
+  display: inline-flex;
+  align-self: baseline;
+
+
+  a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: flex-end;
+  }
+
+  span {
+    font-size: 1.25em;
+    align-self: flex-end;
+    color: #C9C9C9;
+    font-family: $font-family-grundfos-brand, Tahoma, sans-serif;
+    letter-spacing: 0.085em;
+
+    img {
+      margin-right: 10px;
+      margin-bottom :5px;
+    }
+  }
+
+  span:nth-of-type(2) {
+    font-size: 2.25em;
+    margin-right: 5px;
+    font-family: serif;
+  }
+}
+
+.wt-menu-button-links {
+
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+
+  button {
+    padding: 1em 2.75em;
+    background-color: transparent;
+    border: 1px white solid;
+    margin: auto 0.8em;
+    letter-spacing: inherit;
+  }
+
+  mat-icon {
+    vertical-align: middle;
+  }
+
+  #goback {
+    text-decoration: inherit;
+    margin-right: 3em;
+  }
+
+}
+
+.wt-menu-login {
+
+  display: inline-flex;
+  align-self: baseline;
+
+  mat-icon {
+    vertical-align: middle;
+    margin: 0.5em;
+  }
+
+  a {
+    margin-left: 6em;
+    text-decoration: inherit;
+  }
+}
+
+wt-main {
+  grid-area: content;
+  // padding-top: 110px;
+}

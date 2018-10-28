@@ -1,0 +1,87 @@
+<!-- convert to grid / flexbox -->
+<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="header-container">
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">GRUNDFOS</a>
+            <div class="navbar-text">
+                <span><b>|</b></span>
+                <span class="wt-menu-title"><b>WEBTRANSLATE</b></span>
+            </div>
+          </div>
+        </div>
+        <div class="wt-menu col-xs-5">
+          <ul class="nav navbar-nav">
+            <li><a href="#">GO BACK</a></li>
+          </ul>
+          <button type="button" class="btn btn-default navbar-btn">MY PROJECTS</button>
+          <button type="button" class="btn btn-default navbar-btn">PROJECTS</button>
+          <button type="button" class="btn btn-default navbar-btn">CROWDSOURCING</button>
+        </div>
+        <div class="col-xs-3">
+          <ul class="nav navbar-nav navbar-link navbar-right">
+            <li class="active"><a href="#">LOGIN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+<!-- <header>
+    <div class="wt-menu-brand">
+      <a href="#">
+        <span>|</span>
+        <span>WEBTRANSLATE</span>
+      </a>
+    </div>
+    <div class="wt-menu-button-links">
+      <a href="#"><mat-icon class="mat-icon material-icons">keyboard_arrow_left</mat-icon>GO BACK</a>
+      <button mat-stroked-button>MY PROJECTS</button>
+      <button mat-stroked-button>PROJECTS</button>
+      <button mat-stroked-button>CROWD SOURCING</button>
+    </div>
+    <div class="wt-menu-login">
+      <a href="#">LOGIN<mat-icon class="mat-icon material-icons">person</mat-icon></a>
+    </div>
+</header> -->
+
+<header>
+    <div class="header-wrapper">
+        <div class="wt-menu-brand">
+            <a href="#">
+                <span><img src="../assets/img/grundfos-logo.png" width="150" height="20" alt="grundfos-logo"/></span>
+                <span>|</span>
+                <span>WEBTRANSLATE</span>
+            </a>
+        </div>
+        <div class="wt-menu-button-links">
+            <a href="#"><mat-icon class="mat-icon material-icons">keyboard_arrow_left</mat-icon>GO BACK</a>
+            <button mat-stroked-button>MY PROJECTS</button>
+            <button mat-stroked-button>PROJECTS</button>
+            <button mat-stroked-button>CROWD SOURCING</button>
+        </div>
+        <div class="wt-menu-login">
+            <a href="#" *ngIf="userDetail;else loginForm">{{userDetail.name}}<mat-icon class="mat-icon material-icons">person</mat-icon></a>
+            <ng-template #loginForm>
+                <a href="#">LOGIN<mat-icon class="mat-icon material-icons">person</mat-icon></a>
+            </ng-template>
+        </div>
+    </div>
+</header>
+
+
+<!-- <div class="btn-group">
+  <button type="button" class="btn btn-default navbar-btn">DEPARTMENT</button>
+  <button type="button" class="btn navbar-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Show All Departments</a></li>
+    <li><a href="#">Grundfos, Branding Marketing</a></li>
+    <li><a href="#">Grundfos, Web</a></li>
+  </ul>
+</div> -->

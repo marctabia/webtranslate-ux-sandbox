@@ -1,0 +1,24 @@
+<header>
+    <div class="header-wrapper">
+        <div class="wt-menu-brand">
+            <a href="#">
+                <span><img src="../assets/img/grundfos-logo.png" width="150" height="20" alt="grundfos-logo"/></span>
+                <span>|</span>
+                <span>WEBTRANSLATE</span>
+            </a>
+        </div>
+        <div class="wt-menu-button-links">
+            <a id="goback" href="#"><mat-icon class="mat-icon material-icons">keyboard_arrow_left</mat-icon>GO BACK</a>
+            <button mat-stroked-button>MY PROJECTS</button>
+            <!--<button mat-stroked-button>PROJECTS</button>-->
+            <button mat-stroked-button>CROWD SOURCING</button>
+            <div class="wt-menu-login">
+                <a href="#" *ngIf="userDetail;else loginForm">{{userDetail.name}}<mat-icon class="mat-icon material-icons">person</mat-icon></a>
+                <ng-template #loginForm>
+                    <a href="#">LOGIN<mat-icon class="mat-icon material-icons">person</mat-icon></a>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</header>
+<wt-main></wt-main>

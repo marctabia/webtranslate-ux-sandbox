@@ -1,0 +1,106 @@
+<main>
+  <nav id="sidebar">
+    <ul>
+      <li><a href="#"><mat-icon class="mat-icon material-icons">event_available</mat-icon>ACTIONS</a></li>
+      <li><a href="#"><mat-icon class="mat-icon material-icons">visibility</mat-icon>VIEW</a></li>
+      <li><a href="#"><mat-icon class="mat-icon material-icons">event_available</mat-icon>TOOLS</a></li>
+      <li><a href="#"><mat-icon class="mat-icon material-icons">view_agenda</mat-icon>WORKSPACE</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div [ngGrid]>
+      <!-- <div [ngGridItem]="{ resizable: true }" (onDragStop)="test()">
+        <div class="container-fluid">
+          <div class="card-title row">
+            <div class="col-xs-6">
+              <p class="pull-left">TABLE VIEW</p>
+            </div>
+            <div class="col-xs-6">
+              <div class="card-controls pull-right">
+                <a href="#" mat-icon-button class="mat-icon-button" target="_blank">
+                    <mat-icon class="mat-icon material-icons">open_in_new</mat-icon>
+                </a>
+                <a mat-icon-button class="mat-icon-button" role="button">
+                    <mat-icon class="mat-icon material-icons">clear</mat-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div [ngGridItem]="{ 'draggable': true, 'dragHandle' : 'project-card-header' }" (onDragStop)="test()" class="project-card">
+        <div class="project-card-header">
+          <div class="left">
+            <p></p>
+          </div>
+          <div class="right">
+            <p>Id: 3842</p>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="left">
+            <div class="project-name">
+              <p>Project Name:</p>
+              <p>Market Areas (GMO) - missing elements</p>
+            </div>
+            <div class="project-lang">
+              <p>Language:</p>
+              <p>French (FR-FR)</p>
+            </div>
+            <div class="project-details">
+              <div class="created">
+                <p>Created:</p>
+                <p>10-3-18</p>
+              </div>
+              <div class="accept-deadline">
+                <p>Accept deadline:</p>
+                <p>11-03-18</p>
+              </div>
+              <div class="deadline">
+                <p>Deadline:</p>
+                <p>12-06-18</p>
+              </div>
+              <div class="administrator">
+                <p>Administrator:</p>
+                <p>SUMA</p>
+              </div>
+              <div class="translator">
+                <p>Translator:</p>
+                <p>BZJ</p>
+              </div>
+              <div class="delegate">
+                <p>Delegated to:</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <p>Hello World</p>
+          </div>
+        </div>
+        <div class="selector">
+          <p>test</p>
+        </div>
+      </div>
+      <div [ngGridItem]="{ 'resizable': true, 'resizeHandle': 'card-title' }" (onDragStop)="test()">
+          <div class="container-fluid">
+            <div class="card-title row">
+              <div class="col-xs-6">
+                <p class="pull-left">WT Editor Card</p>
+              </div>
+              <div class="col-xs-6">
+                <div class="card-controls pull-right">
+                  <a href="#" mat-icon-button class="mat-icon-button" target="_blank">
+                      <mat-icon class="mat-icon material-icons">open_in_new</mat-icon>
+                  </a>
+                  <a mat-icon-button class="mat-icon-button" role="button">
+                      <mat-icon class="mat-icon material-icons">clear</mat-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+</main>
